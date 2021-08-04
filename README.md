@@ -1,4 +1,4 @@
-# quick-setup
+# arch-quick-setup
 
 # How to use
 First of all install arch (duh).
@@ -11,7 +11,14 @@ There shouldn't be any issue with running this script on a non-clean install, bu
 If you are still here after reading the wall of text that follows, go forth, friendo, no more tweaking required! Run the script, let it do its thing, and, most importantly, be happy =)
 
 # Tweaks / Optional shenanigans
-These portions of the script are marked with a, quite appropriate, in my opinion, "OPTIONAL" comment.
+The relevant portions of the script are marked with a, quite appropriate, in my opinion, "OPTIONAL" comment.
+
+## dwm keybindings
+I took the liberty of slightly modifying the dwm keybindings (and quite possibly also st and dmenu's).
+
+One such modification which instantly springs to mind is the modkey. On my build, the modkey is set to the windows key, instead of the left alt.
+
+If I remember any more changes, I'll be sure to update this section.
 
 ## Auto mounting a partition on start up:
 I sometimes find the necessity to have a shared partition, hence this.
