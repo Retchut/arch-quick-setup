@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount Shared Partition
+
+[Mount]
+What=/dev/sda4
+Where=/run/media/retchut/shared
+Type=ntfs
+Options=defaults
+
+[Install]
+WantedBy=multi-user.target

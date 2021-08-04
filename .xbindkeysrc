@@ -1,0 +1,70 @@
+#
+#	xbindkeys --poll-rc 		---> reload config file after changes
+#	also killall xbindkeys and restart, for good measure
+#
+
+################# PULSE AUDIO #################
+
+#increase volume
+#"pactl set-sink-volume @DEFAULT_SINK@ +2000"	# only works on the default sink
+"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK +5%; done"
+	XF86AudioRaiseVolume
+
+#decrease volume
+#"pactl set-sink-volume @DEFAULT_SINK@ -2000"	# only works on the default sink
+"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK -5%; done"
+	XF86AudioLowerVolume
+
+
+#mute volume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	XF86AudioMute
+
+#mute microphone
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+	Control+Alt + m
+
+#printscreen
+"scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png"
+	Print
+
+################################################
+
+################## BACKLIGHT ###################
+
+"xbacklight -dec 10"
+	XF86MonBrightnessDown
+
+"xbacklight -inc 10"
+	XF86MonBrightnessUp
+
+################################################
+
+################## TOUCHPAD ####################
+
+#""
+#	XF86TouchpadToggle
+
+################################################
+
+################### ASUSCTL ####################
+
+#change fan mode
+"asusctl profile -n"
+	XF86Launch4
+
+#rgb brightness up
+#""
+#	XF86KbdBrightnessUp
+
+#rgb brightness down
+#""
+#	XF86KbdBrightnessDown
+
+#next aura profile
+"asusctl led-mode -n"
+	XF86Launch3
+
+#prev aura profile
+"asusctl led-mode -p"
+	XF86Launch2

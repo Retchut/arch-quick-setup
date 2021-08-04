@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xbindkeys           	#keybindings
+picom &             	#window compositor
+statusbar.sh &      	#run status bar script
+~/.fehbg &          	#background
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources #load Xresources
+fcitx -d &          	#japanese input
+exec dwm            	#start window manager
