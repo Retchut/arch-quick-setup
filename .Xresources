@@ -27,6 +27,8 @@ st.color11:      #ffffff
 ! color 14 --> some dotfiles
 ! color 15 -->                                                  |   mocp now playing name
 
+! color 2 or 10 --> cfdisks free
+
 st.color0:       #c20b0b
 st.color2:       #ff00a1
 st.color10:      #ff00a1
@@ -38,66 +40,15 @@ st.color15:      #ffffff
 ! ######################################################
 
 ! #################### theme 1 #########################
-!! --------st---------
-!! cursor colors when on the foreground or background (matches non-selected tab background color)
-!st.foreground:   #6d0062
-!st.background:   #6d0062
-!! mocp gray backgrounds
-!st.color4:       #bdbcbc
-!st.color6:       #bdbcbc
-!! text and standard files
-!st.color7:       #00ffb9
-!
-!
-!! --------dwm---------
-!! border color
-!! selected window
-!dwm.selbordercolor: #005577
-!! non-selected window
-!dwm.normbordercolor: #444444
-!
-!! background and bar colour
-!! selected tab         -> matches non-selected tab font colour
-! dwm.selbgcolor: #00ffb9
-!! non-selected tab     -> matches selected tab font colour
-! dwm.normbgcolor: #6d0062
-!
-!! font color
-!! selected tab         -> matches non-selected tab background colour
-! dwm.selfgcolor: #6d0062
-!! non-selected tab     -> matches selected tab background colour
-! dwm.normfgcolor: #00ffb9
-!
-!! test inactive colours
-!!    1      2     3      4      5
-!! 6d0062 6d002b 41006d 5f006d 6d0045
-!
-!
-!! -------dmenu--------
-!! background
-!! selected              -> matches dwm selected background
-!dmenu.selbackground: #00ffb9
-!! non-selected          -> matches dwm non-selected background
-!dmenu.background: #6d0062
-!
-!! text
-!! selected              -> matches dwm selected text
-!dmenu.selforeground: #6d0062
-!! non-selected          -> matches dwm non-selected text
-!dmenu.foreground: #00ffb9
-!
-! ######################################################
-
-! #################### theme 2 #########################
 ! --------st---------
 ! cursor colors when on the foreground or background (matches non-selected tab background color)
-st.foreground:   #bdbcbc
-st.background:   #bdbcbc
-! mocp non-gray backgrounds
-st.color4:       #00ffb9
-st.color6:       #00ffb9
+st.foreground:   #6d0062
+st.background:   #6d0062
+! mocp gray backgrounds
+st.color4:       #bdbcbc
+st.color6:       #bdbcbc
 ! text and standard files
-st.color7:       #f90303
+st.color7:       #00ffb9
 
 
 ! --------dwm---------
@@ -108,33 +59,84 @@ dwm.selbordercolor: #005577
 dwm.normbordercolor: #444444
 
 ! background and bar colour
-! selected tab         -> matches non-selected tab font colour 
-dwm.selbgcolor: #f90303
+! selected tab         -> matches non-selected tab font colour
+ dwm.selbgcolor: #00ffb9
 ! non-selected tab     -> matches selected tab font colour
-dwm.normbgcolor: #bdbcbc
+ dwm.normbgcolor: #6d0062
 
 ! font color
 ! selected tab         -> matches non-selected tab background colour
-dwm.selfgcolor: #bdbcbc
-! non-selected tab     -> matches selected tab background colour 
-dwm.normfgcolor: #f90303
+ dwm.selfgcolor: #6d0062
+! non-selected tab     -> matches selected tab background colour
+ dwm.normfgcolor: #00ffb9
 
 ! test inactive colours
-!    1      2
-! 720000 f90303
+!    1      2     3      4      5
+! 6d0062 6d002b 41006d 5f006d 6d0045
 
 
 ! -------dmenu--------
 ! background
 ! selected              -> matches dwm selected background
-dmenu.selbackground: #f90303
+dmenu.selbackground: #00ffb9
 ! non-selected          -> matches dwm non-selected background
-dmenu.background: #bdbcbc
+dmenu.background: #6d0062
 
 ! text
 ! selected              -> matches dwm selected text
-dmenu.selforeground: #bdbcbc
+dmenu.selforeground: #6d0062
 ! non-selected          -> matches dwm non-selected text
-dmenu.foreground: #f90303
+dmenu.foreground: #00ffb9
 
 ! ######################################################
+
+!! #################### theme 2 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #bdbcbc
+!st.background:   #bdbcbc
+!! mocp non-gray backgrounds
+!st.color4:       #00ffb9
+!st.color6:       #00ffb9
+!! text and standard files
+!st.color7:       #f90303
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour 
+!dwm.selbgcolor: #f90303
+!! non-selected tab     -> matches selected tab font colour
+!dwm.normbgcolor: #bdbcbc
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+!dwm.selfgcolor: #bdbcbc
+!! non-selected tab     -> matches selected tab background colour 
+!dwm.normfgcolor: #f90303
+!
+!! test inactive colours
+!!    1      2
+!! 720000 f90303
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #f90303
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #bdbcbc
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #bdbcbc
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #f90303
+!
+!! ######################################################
