@@ -6,8 +6,6 @@ getmedia(){
 }
 
 # more icons       (  :vol mute not showing up)
-# if this function broke, it's probably because the number before the volume percentage
-# somehow now has more than 5 algorisms
 getvolume(){
 	# each SINK comes in the format: "AIII"
 	# where A is an asterisk (active sink) or a blank (inactive)
@@ -19,7 +17,7 @@ getvolume(){
         	then
                 	# active sink
         	        INDEX="$(echo $SINK | cut -b 2-)"
-	                VOL="$(echo $(pactl get-sink-volume $INDEX | cut -b 30-32))"
+	                VOL="$(echo $(pactl get-sink-volume $INDEX | awk '{ print $5 }' ))"
                 	echo " $VOL"
         	fi
 	done
@@ -79,7 +77,7 @@ while :; do
 
 	# build status bar
 	status=" $(getnetwork) | $(getvolume) | $(getbattery) | $(getdate)"
-	
+
 	# update status bar
 	xsetroot -name "$status"
 
