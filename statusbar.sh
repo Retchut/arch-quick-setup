@@ -35,16 +35,16 @@ getbattery(){
 		echo  "$BAT"%
 
 	else
-		if [ $BAT -gt 90 ]
+		if [[ $BAT -gt 90 || $BAT == 90 ]]
 		then
 			echo  "$BAT"%
-		elif [[ $BAT -lt 90 && $BAT -gt 65 ]]
+		elif [[ ($BAT -lt 90 && $BAT -gt 65) || $BAT == 65 ]]
 		then
 			echo  "$BAT"%
-		elif [[ $BAT -lt 65 && $BAT -gt 35 ]]
+		elif [[ ($BAT -lt 65 && $BAT -gt 35) || $BAT == 35 ]]
 		then
 			echo  "$BAT"%
-		elif [[ $BAT -lt 35 && $BAT -gt 10 ]]
+		elif [[ ($BAT -lt 35 && $BAT -gt 10) || $BAT == 10 ]]
 		then
 			echo  "$BAT"%
 		else
