@@ -8,7 +8,6 @@ st.font: Liberation Mono:pixelsize=20:antialias=true:autohint=true
 ! ############# constant terminal colors #################
 
 ! no idea what these are. keeping them as white so I know when I come across them
-st.color1:       #ffffff
 st.color3:       #ffffff
 st.color5:       #ffffff
 st.color8:       #ffffff
@@ -18,6 +17,7 @@ st.color11:      #ffffff
 ! some of these are mocp tag thingies and selected nano text
 
 ! color 0  --> tmp dir text                                     |   mocp selected text/selected data background
+! color 1  --> nano messages background, git modified file
 ! color 2  --> external partition directory background
 ! color 4  --> external partition directory text                |   mocp playing data background
 ! color 6  --> system stuff?                                    |   mocp selected background
@@ -25,11 +25,12 @@ st.color11:      #ffffff
 ! color 12 --> internal partition directory text, some dotfiles |   mocp data text
 ! color 13 --> sockets/pipes?
 ! color 14 --> some dotfiles
-! color 15 -->                                                  |   mocp now playing name
+! color 15 --> nano messages                                    |   mocp now playing name
 
 ! color 2 or 10 --> cfdisks free
 
 st.color0:       #c20b0b
+st.color1:       #000000
 st.color2:       #ff00a1
 st.color10:      #ff00a1
 st.color12:      #2032de
