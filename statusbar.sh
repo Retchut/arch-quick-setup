@@ -2,7 +2,8 @@
 
 # pause play symbols    
 getmedia(){
-        echo ""
+	PLAYING=$(mocp -i | grep "SongTitle: " | cut -b 11-)
+        echo "$PLAYING"
 }
 
 # more icons       (  :vol mute not showing up)
@@ -76,7 +77,7 @@ getdate(){
 while :; do
 
 	# build status bar
-	status=" $(getnetwork) | $(getvolume) | $(getbattery) | $(getdate)"
+	status=" $(getmedia) | $(getnetwork) | $(getvolume) | $(getbattery) | $(getdate)"
 
 	# update status bar
 	xsetroot -name "$status"
