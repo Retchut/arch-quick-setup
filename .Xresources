@@ -20,7 +20,7 @@ st.color11:      #ffffff
 ! color 2  --> external partition directory background
 ! color 4  --> external partition directory text                |   mocp playing data background
 ! color 6  --> system stuff?                                    |   mocp selected background
-! color 8  --> 							|   mocp player options background
+! color 8  -->							|   mocp player options background
 ! color 10 --> external partition files, some dotfiles
 ! color 12 --> internal partition directory text, some dotfiles |   mocp data text
 ! color 13 --> sockets/pipes?
@@ -28,6 +28,7 @@ st.color11:      #ffffff
 ! color 15 --> nano messages                                    |   mocp now playing name
 
 ! color 2 or 10 --> cfdisks free
+! color 1 or 8  --> nano selection background
 
 st.color0:       #c20b0b
 st.color1:       #000000
