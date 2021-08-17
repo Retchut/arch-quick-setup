@@ -1,6 +1,7 @@
 # status bar script:
 --> backlight
---> media status
+--> improve media status (add pause and stopped (none playing) icons)
+--> replace wifi % with network name
 --> use extra icons to reflect the volume amount      (  :vol mute not showing up)
 --> update media status when pressing media keybindings*
 --> update backlight status when pressing backlight keybindings*
