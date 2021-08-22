@@ -2,8 +2,25 @@
 
 # pause play symbols    
 getmedia(){
-	PLAYING=$(mocp -i | grep "SongTitle: " | cut -b 11-)
-        echo "$PLAYING"
+	STATE="$(mocp -i | grep "State: " | cut -b 8-)"
+	MEDIA=""	
+
+	if [ $STATE == "STOP"  ]
+        then
+                MEDIA=""
+        else
+		if [ $STATE == "PAUSE" ]
+		then
+			MEDIA=""
+		elif [ $STATE == "PLAY" ]
+		then
+			MEDIA=""
+		fi
+
+		MEDIA="$MEDIA$(mocp -i | grep "SongTitle: " | cut -b 11-)"
+	fi
+
+	echo $MEDIA
 }
 
 # more icons       (  :vol mute not showing up)
