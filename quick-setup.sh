@@ -96,9 +96,8 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity
-sudo pacman -S --noconfirm firefox
-sudo pacman -S --noconfirm steam # steam needs the Arial font
+sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity
+sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop visual-studio-code-bin ttf-ms-fonts moc-pulse
 sudo pacman -S --noconfirm wavpack
 
