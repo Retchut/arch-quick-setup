@@ -20,6 +20,11 @@ One such modification which instantly springs to mind is the modkey. On my build
 
 If I remember any more changes, I'll be sure to update this section.
 
+## monitor scripts
+I made a few scripts to easily configure the output to an external monitor. Right now, I only have one to mirror the output of both screens (which will work even between monitors with different resolutions), but it needs to be configured before it can be run.
+
+To configure a script, edit said script and fill in the square brackets with the correct information. They're all inside the scripts folder, and will all be copied to /usr/local/bin
+
 ## Auto mounting a partition on start up:
 I sometimes find the necessity to have a shared partition, hence this.
 

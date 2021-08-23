@@ -5,6 +5,9 @@
 --> update media status when pressing media keybindings*
 --> update backlight status when pressing backlight keybindings*
 
+# monitor scripts
+--> extend right/left monitor scripts
+
 # install script
 --> figure out a way to append the required exports (for using mozc with st) to the /etc/profile file, from within the install script
 

@@ -18,7 +18,9 @@ cp -rf dmenu dwm st ~/packages
 cp -rf wallpapers ~
 cp -f .bash_profile .xbindkeysrc .xprofile .Xresources ~
 mkdir ~/.local/bin
-sudo cp -f statusbar.sh /usr/local/bin
+
+#move scripts
+sudo cp -fa scripts/* /usr/local/bin
 
 # build st and dwm
 cd ~/packages/st
