@@ -1,5 +1,5 @@
 ! transparency value (0-1)
-st.alpha: 0.8
+st.alpha: 0.7
 
 ! Set a default font and font size as below:
 *.font: Liberation Mono Bold:pixelsize=16:antialias=true:autohint=true
@@ -42,56 +42,56 @@ st.color15:      #ffffff
 
 ! ######################################################
 
-! #################### theme 1 #########################
-! --------st---------
-! cursor colors when on the foreground or background (matches non-selected tab background color)
-st.foreground:   #6d0062
-st.background:   #6d0062
-! mocp gray backgrounds
-st.color4:       #bdbcbc
-st.color6:       #bdbcbc
-! text and standard files
-st.color7:       #00ffb9
-
-
-! --------dwm---------
-! border color
-! selected window
-dwm.selbordercolor: #005577
-! non-selected window
-dwm.normbordercolor: #444444
-
-! background and bar colour
-! selected tab         -> matches non-selected tab font colour
- dwm.selbgcolor: #00ffb9
-! non-selected tab     -> matches selected tab font colour
- dwm.normbgcolor: #6d0062
-
-! font color
-! selected tab         -> matches non-selected tab background colour
- dwm.selfgcolor: #6d0062
-! non-selected tab     -> matches selected tab background colour
- dwm.normfgcolor: #00ffb9
-
-! test inactive colours
-!    1      2     3      4      5
-! 6d0062 6d002b 41006d 5f006d 6d0045
-
-
-! -------dmenu--------
-! background
-! selected              -> matches dwm selected background
-dmenu.selbackground: #00ffb9
-! non-selected          -> matches dwm non-selected background
-dmenu.background: #6d0062
-
-! text
-! selected              -> matches dwm selected text
-dmenu.selforeground: #6d0062
-! non-selected          -> matches dwm non-selected text
-dmenu.foreground: #00ffb9
-
-! ######################################################
+!! #################### theme 1 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #6d0062
+!st.background:   #6d0062
+!! mocp gray backgrounds
+!st.color4:       #bdbcbc
+!st.color6:       #bdbcbc
+!! text and standard files
+!st.color7:       #00ffb9
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour
+! dwm.selbgcolor: #00ffb9
+!! non-selected tab     -> matches selected tab font colour
+! dwm.normbgcolor: #6d0062
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+! dwm.selfgcolor: #6d0062
+!! non-selected tab     -> matches selected tab background colour
+! dwm.normfgcolor: #00ffb9
+!
+!! test inactive colours
+!!    1      2     3      4      5
+!! 6d0062 6d002b 41006d 5f006d 6d0045
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #00ffb9
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #6d0062
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #6d0062
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #00ffb9
+!
+!! ######################################################
 
 !! #################### theme 2 #########################
 !! --------st---------
@@ -143,3 +143,50 @@ dmenu.foreground: #00ffb9
 !dmenu.foreground: #f90303
 !
 !! ######################################################
+
+! #################### theme 3 #########################
+! --------st---------
+! cursor colors when on the foreground or background (matches non-selected tab background color)
+st.foreground:   #50a3fc
+st.background:   #50a3fc
+! mocp non-gray backgrounds
+st.color4:       #bdbcbc
+st.color6:       #bdbcbc
+! text and standard files
+st.color7:       #50a3fc
+
+
+! --------dwm---------
+! border color
+! selected window
+dwm.selbordercolor: #005577
+! non-selected window
+dwm.normbordercolor: #444444
+
+! background and bar colour
+! selected tab         -> matches non-selected tab font colour 
+dwm.selbgcolor: #50a3fc
+! non-selected tab     -> matches selected tab font colour
+dwm.normbgcolor: #000000
+
+! font color
+! selected tab         -> matches non-selected tab background colour
+dwm.selfgcolor: #000000
+! non-selected tab     -> matches selected tab background colour 
+dwm.normfgcolor: #50a3fc
+
+
+! -------dmenu--------
+! background
+! selected              -> matches dwm selected background
+dmenu.selbackground: #50a3fc
+! non-selected          -> matches dwm non-selected background
+dmenu.background: #000000
+
+! text
+! selected              -> matches dwm selected text
+dmenu.selforeground: #000000
+! non-selected          -> matches dwm non-selected text
+dmenu.foreground: #50a3fc
+
+! ######################################################
