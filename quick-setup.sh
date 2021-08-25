@@ -93,6 +93,7 @@ cd $curr_dir
 
 # other apps
 sudo pacman -S --noconfirm ttf-font-awesome # font for status bar
+sudo pacman -S --noconfirm man-db man-pages # man pages
 sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity shotcut
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
