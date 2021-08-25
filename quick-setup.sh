@@ -57,7 +57,7 @@ sudo pacman -S --noconfirm udisks2 ntfs-3g
 sudo pacman -S --noconfirm xorg-xbacklight
 
 # install audio and bluetooth utilities
-sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa
+sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa pavucontrol
 sudo pacman -S --noconfirm bluez bluez-utils pulseaudio-bluetooth
 sudo systemctl --no-ask-password start bluetooth.service
 sudo systemctl --no-ask-password enable bluetooth.service
@@ -92,7 +92,7 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity
+sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity shotcut
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
 # import moc-pulse's gpg key
