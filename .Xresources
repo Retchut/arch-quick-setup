@@ -42,7 +42,54 @@ st.color15:      #ffffff
 
 ! ######################################################
 
-!! #################### theme 1 #########################
+! #################### theme 1 #########################
+! --------st---------
+! cursor colors when on the foreground or background (matches non-selected tab background color)
+st.foreground:   #50a3fc
+st.background:   #50a3fc
+! mocp non-gray backgrounds
+st.color4:       #bdbcbc
+st.color6:       #bdbcbc
+! text and standard files
+st.color7:       #50a3fc
+
+
+! --------dwm---------
+! border color
+! selected window
+dwm.selbordercolor: #005577
+! non-selected window
+dwm.normbordercolor: #444444
+
+! background and bar colour
+! selected tab         -> matches non-selected tab font colour 
+dwm.selbgcolor: #50a3fc
+! non-selected tab     -> matches selected tab font colour
+dwm.normbgcolor: #000000
+
+! font color
+! selected tab         -> matches non-selected tab background colour
+dwm.selfgcolor: #000000
+! non-selected tab     -> matches selected tab background colour 
+dwm.normfgcolor: #50a3fc
+
+
+! -------dmenu--------
+! background
+! selected              -> matches dwm selected background
+dmenu.selbackground: #50a3fc
+! non-selected          -> matches dwm non-selected background
+dmenu.background: #000000
+
+! text
+! selected              -> matches dwm selected text
+dmenu.selforeground: #000000
+! non-selected          -> matches dwm non-selected text
+dmenu.foreground: #50a3fc
+
+! ######################################################
+
+!! #################### theme 2 #########################
 !! --------st---------
 !! cursor colors when on the foreground or background (matches non-selected tab background color)
 !st.foreground:   #6d0062
@@ -93,7 +140,7 @@ st.color15:      #ffffff
 !
 !! ######################################################
 
-!! #################### theme 2 #########################
+!! #################### theme 3 #########################
 !! --------st---------
 !! cursor colors when on the foreground or background (matches non-selected tab background color)
 !st.foreground:   #bdbcbc
@@ -143,50 +190,3 @@ st.color15:      #ffffff
 !dmenu.foreground: #f90303
 !
 !! ######################################################
-
-! #################### theme 3 #########################
-! --------st---------
-! cursor colors when on the foreground or background (matches non-selected tab background color)
-st.foreground:   #50a3fc
-st.background:   #50a3fc
-! mocp non-gray backgrounds
-st.color4:       #bdbcbc
-st.color6:       #bdbcbc
-! text and standard files
-st.color7:       #50a3fc
-
-
-! --------dwm---------
-! border color
-! selected window
-dwm.selbordercolor: #005577
-! non-selected window
-dwm.normbordercolor: #444444
-
-! background and bar colour
-! selected tab         -> matches non-selected tab font colour 
-dwm.selbgcolor: #50a3fc
-! non-selected tab     -> matches selected tab font colour
-dwm.normbgcolor: #000000
-
-! font color
-! selected tab         -> matches non-selected tab background colour
-dwm.selfgcolor: #000000
-! non-selected tab     -> matches selected tab background colour 
-dwm.normfgcolor: #50a3fc
-
-
-! -------dmenu--------
-! background
-! selected              -> matches dwm selected background
-dmenu.selbackground: #50a3fc
-! non-selected          -> matches dwm non-selected background
-dmenu.background: #000000
-
-! text
-! selected              -> matches dwm selected text
-dmenu.selforeground: #000000
-! non-selected          -> matches dwm non-selected text
-dmenu.foreground: #50a3fc
-
-! ######################################################
