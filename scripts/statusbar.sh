@@ -46,7 +46,7 @@ getbattery(){
 	CHG=$(cat /sys/class/power_supply/BAT?/status)
 	
 	# if the laptop is plugged in
-	if [[ $CHG == "Charging" || $CHG == "Full" ]]
+	if [[ $CHG == "Charging" || $CHG == "Not charging" ]]
 	then
 		echo  "$BAT"%
 
