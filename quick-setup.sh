@@ -14,9 +14,10 @@ sudo localectl --no-ask-password set-keymap pt-latin1
 
 # move config files that don't depend on anything
 mkdir ~/packages
+mkdir ~/.config
 cp -rf dmenu dwm st ~/packages
 cp -rf wallpapers ~
-cp -f .bash_profile .xbindkeysrc .xprofile .Xresources ~
+cp -f .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources ~
 mkdir ~/.local/bin
 
 #move scripts
@@ -75,16 +76,9 @@ sudo systemctl --no-ask-password daemon-reload
 sudo systemctl --no-ask-password start run-media-retchut-shared.mount
 sudo systemctl --no-ask-password enable run-media-retchut-shared.mount
 
-# load my pacman configuration (enabled multilib and G14 repo (the latter is for asusctl))
+# load my pacman configuration (enabled multilib (for steam) and G14 repo (for asusctl))
 sudo cp -f pacman.conf /etc
 sudo pacman -Syyu --noconfirm
-
-# OPTIONAL
-# asus laptop (asusctl) read more at https://asus-linux.org/wiki/arch-guide/
-sudo pacman -S --noconfirm asusctl
-sudo pacman -S --noconfirm linux-g14 linux-g14-headers  # load custom kernel
-grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
-sudo pacman -S --noconfirm nvidia-dkms      # install nvidia drivers
 
 # load keybindings (audio control, asus fan control, screenshots, trackpad)
 sudo pacman -S --noconfirm xbindkeys
@@ -100,7 +94,11 @@ cd $curr_dir
 # other apps
 sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop visual-studio-code-bin ttf-ms-fonts moc-pulse
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop visual-studio-code-bin ttf-ms-fonts
+# import moc-pulse's gpg key
+# TODO: this is probably a HUGE security risk, I should look into this
+gpg --import F3121E4F2885A7AA
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop moc-pulse
 sudo pacman -S --noconfirm wavpack
 
 # OPTIONAL
@@ -113,6 +111,13 @@ cd /tmp/
 wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.7.3.zip
 unzip droidcam_latest.zip -d droidcam
 cd droidcam && sudo ./install-client && sudo ./install-video
+sudo pacman -S --noconfirm libappindicator-gtk3
+
+# asus laptop (asusctl) read more at https://asus-linux.org/wiki/arch-guide/
+sudo pacman -S --noconfirm asusctl
+sudo pacman -S --noconfirm linux-g14 linux-g14-headers  # load custom kernel
+grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
+sudo pacman -S --noconfirm nvidia-dkms      # install nvidia drivers
 
 echo ""
 echo "keybindings were setup for my hardware, so I recommend you edit the .xbindkeysrc with the keys you wish to bind to the commands in the file (and change the devices mentioned by some commands), which was copied to your home folder, then run xbindkeys --poll-rc"
