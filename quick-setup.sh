@@ -81,7 +81,7 @@ sudo cp -f pacman.conf /etc
 sudo pacman -Syyu --noconfirm
 
 # load keybindings (audio control, asus fan control, screenshots, trackpad)
-sudo pacman -S --noconfirm xbindkeys
+sudo pacman -S --noconfirm xbindkeys xorg-xinput
 xbindkeys --poll-rc
 
 # yay
@@ -97,7 +97,7 @@ sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
 # import moc-pulse's gpg key
 # TODO: this is probably a HUGE security risk, I should look into this
-gpg --import F3121E4F2885A7AA
+gpg --recv-keys F3121E4F2885A7AA
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop moc-pulse
 sudo pacman -S --noconfirm wavpack
 
@@ -116,7 +116,7 @@ sudo pacman -S --noconfirm libappindicator-gtk3
 # asus laptop (asusctl) read more at https://asus-linux.org/wiki/arch-guide/
 sudo pacman -S --noconfirm asusctl
 sudo pacman -S --noconfirm linux-g14 linux-g14-headers  # load custom kernel
-grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
+sudo grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
 sudo pacman -S --noconfirm nvidia-dkms      # install nvidia drivers
 
 echo ""
