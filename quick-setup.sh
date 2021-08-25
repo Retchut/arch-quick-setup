@@ -92,6 +92,7 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
+sudo pacman -S --noconfirm ttf-font-awesome # font for status bar
 sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity shotcut
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
@@ -113,7 +114,8 @@ unzip droidcam_latest.zip -d droidcam
 cd droidcam && sudo ./install-client && sudo ./install-video
 sudo pacman -S --noconfirm libappindicator-gtk3
 
-# asus laptop (asusctl) read more at https://asus-linux.org/wiki/arch-guide/
+# asus laptop (asusctl)
+# read more at https://asus-linux.org/wiki/arch-guide/
 sudo pacman -S --noconfirm asusctl
 sudo pacman -S --noconfirm linux-g14 linux-g14-headers  # load custom kernel
 sudo grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
@@ -128,7 +130,6 @@ echo "\tkeycode"
 
 echo ""
 echo "after rebooting:"
-echo "--> run 'feh --bg-scale ~/wallpapers/wallpaper.jpg' to apply a wallpaper"
 echo "--> run 'setxkbmap -layout pt' if X is not using the pt keymap"
 echo "--> you need to configure mozc using the fcitx-config tool afterwards"
 echo "--> to use mozc with the suckless simple terminal, add the following lines to your /etc/profile file:"
