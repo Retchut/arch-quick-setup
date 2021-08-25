@@ -94,11 +94,11 @@ cd $curr_dir
 # other apps
 sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop visual-studio-code-bin ttf-ms-fonts
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
 # import moc-pulse's gpg key
 # TODO: this is probably a HUGE security risk, I should look into this
 gpg --import F3121E4F2885A7AA
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --sudoloop moc-pulse
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop moc-pulse
 sudo pacman -S --noconfirm wavpack
 
 # OPTIONAL
