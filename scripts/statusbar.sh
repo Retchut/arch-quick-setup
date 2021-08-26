@@ -23,6 +23,22 @@ getmedia(){
 	echo $MEDIA
 }
 
+getnetwork(){
+    WIFI_STRENGTH=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
+
+	# if we're connected via an ethernet cable
+	# alternative icon for ethernet if I'm feeling particularly cute that day:
+	if [ $(cat /sys/class/net/e*/operstate) == "up" ]
+	then
+        	echo ""
+	elif [ -z $WIFI_STRENGTH ]
+	then
+        	echo ""
+	else
+        	echo " $WIFI_STRENGTH%"
+	fi
+}
+
 # more icons       (  :vol mute not showing up)
 getvolume(){
 	# each SINK comes in the format: "AIII"
@@ -67,22 +83,6 @@ getbattery(){
 			echo  "$BAT"%
 		fi	
 
-	fi
-}
-
-getnetwork(){
-    WIFI_STRENGTH=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
-
-	# if we're connected via an ethernet cable
-	# alternative icon for ethernet if I'm feeling particularly cute that day:
-	if [ $(cat /sys/class/net/e*/operstate) == "up" ]
-	then
-        	echo ""
-	elif [ -z $WIFI_STRENGTH ]
-	then
-        	echo ""
-	else
-        	echo " $WIFI_STRENGTH%"
 	fi
 }
 
