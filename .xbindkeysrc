@@ -25,7 +25,7 @@
 	Control+Alt + m
 
 #printscreen
-"scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png"
+"scrot ~/screenshots/%Y%m%d-%H-%M-%S-screenshot.png"
 	Print
 
 ################################################
