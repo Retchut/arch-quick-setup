@@ -92,9 +92,8 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm ttf-font-awesome # font for status bar
-sudo pacman -S --noconfirm man-db man-pages # man pages
-sudo pacman -S --noconfirm firefox nautilus vlc mpv anki discord gimp libreoffice-still neofetch unzip unrar bc audacity shotcut
+sudo pacman -S --noconfirm man-db man-pages unzip unrar bc neofetch mpv mesa-demos # utilities
+sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop visual-studio-code-bin ttf-ms-fonts
 # import moc-pulse's gpg key
@@ -118,9 +117,9 @@ sudo pacman -S --noconfirm libappindicator-gtk3
 # asus laptop (asusctl)
 # read more at https://asus-linux.org/wiki/arch-guide/
 sudo pacman -S --noconfirm asusctl
-sudo pacman -S --noconfirm linux-g14 linux-g14-headers  # load custom kernel
-sudo grub-mkconfig -o /boot/grub/grub.conf       # regenerate grub configuration
-sudo pacman -S --noconfirm nvidia-dkms      # install nvidia drivers
+sudo pacman -S --noconfirm nvidia-dkms # install nvidia drivers
+sudo pacman -S --noconfirm lib32-nvidia-utils # some games on steam are still 32 bit
+sudo pacman -S --noconfirm nvidia-prime # for prime gpu switching
 
 echo ""
 echo "keybindings were setup for my hardware, so I recommend you edit the .xbindkeysrc with the keys you wish to bind to the commands in the file (and change the devices mentioned by some commands), which was copied to your home folder, then run xbindkeys --poll-rc"
@@ -138,3 +137,6 @@ echo "export GTK_IM_MODULE='fcitx'"
 echo "export QT_IM_MODULE='fcitx'"
 echo "export SDL_IM_MODULE='fcitx'"
 echo "export XMODIFIERS='@im=fcitx'"
+
+echo ""
+echo "don't forget to add `prime-run %command%` to the launch options of games on steam"
