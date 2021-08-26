@@ -54,12 +54,12 @@
 	XF86Launch4
 
 #rgb brightness up
-#""
-#	XF86KbdBrightnessUp
+"asusctl -k high"
+	XF86KbdBrightnessUp
 
 #rgb brightness down
-#""
-#	XF86KbdBrightnessDown
+"asusctl -k off"
+	XF86KbdBrightnessDown
 
 #next aura profile
 "asusctl led-mode -n"
