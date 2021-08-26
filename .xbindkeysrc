@@ -42,8 +42,8 @@
 
 ################## TOUCHPAD ####################
 
-#""
-#	XF86TouchpadToggle
+"xinput-toggle -r "ELAN1405:00 04F3:30DF Touchpad""
+	XF86TouchpadToggle
 
 ################################################
 
