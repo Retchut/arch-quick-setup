@@ -47,9 +47,9 @@ If you don't have an asus gaming laptop just comment out this portion of the scr
 
 Also, do yourself a favour and don't buy an asus gaming laptop if you intend to use linux, at least for now.
 
-If you do have an asus gaming laptop and have never used this tool, I shall sing two prayers to your mental sanity tonight.
+If you do have an asus gaming laptop and have never used this tool, I have no idea how you're still sane.
 
-For this last demogrphic, there is no tweaking necessary, you can just let the script do its thing. The script will install a patched kernel, and from hereon out you should get your nvidia drivers from the nvidia-dkms package.
+For this last demogrphic, there is no tweaking necessary, you can just let the script do its thing. The script will install helpful utilities, and from thereon out you should get your nvidia drivers from the nvidia-dkms package.
 
 I do recommend reading their website, however: https://asus-linux.org/
 
@@ -92,7 +92,6 @@ Some of these operations require some manual configuration afterwards, which is 
 
 # Not yet implemented
 - Still missing some keybindings
-- Multiple monitor setup
 - Making everything prettier
 
 Read the TODO.md file for more details.
@@ -112,9 +111,9 @@ Read the TODO.md file for more details.
 - mocp (cli music player)
 - xbindkeys
 - asusctl
-- custom kernel and nvidia drivers
+- nvidia drivers, and gpu switching utilities
 - yay
-- nautilus (I don't like it)
+- nautilus (I don't like it, but eh)
 - vlc
 - anki (and mpv for audio in flashcards)
 - discord
