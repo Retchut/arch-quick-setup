@@ -1,5 +1,6 @@
 #!/bin/bash
 #export PATH="$PATH:/opt/idea-IC-212.4746.92/bin"
+asusctl -c 60           #set max charge to 60%
 xbindkeys           	#keybindings
 picom &             	#window compositor
 mocp -S                 #run mocp server
