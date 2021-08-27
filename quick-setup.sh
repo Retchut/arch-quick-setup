@@ -95,12 +95,17 @@ cd $curr_dir
 # other apps
 sudo pacman -S --noconfirm man-db man-pages unzip unrar bc neofetch mpv mesa-demos # utilities
 sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle
+
+# gaming
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop xinput-toggle visual-studio-code-bin ttf-ms-fonts
+sudo pacman -S --noconfirm flatpak
+flatpak install flathub org.desmume.DeSmuME # to run DeSmuME: flatpak run org.desmume.DeSmuMe
+
 # import moc-pulse's gpg key
 # TODO: this is probably a HUGE security risk, I should look into this
 gpg --recv-keys F3121E4F2885A7AA
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop moc-pulse
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm  moc-pulse
 sudo pacman -S --noconfirm wavpack
 
 # OPTIONAL
