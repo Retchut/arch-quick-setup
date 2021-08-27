@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# pause play symbols    
 getmedia(){
 	STATE="$(mocp -i | grep "State: " | cut -b 8-)"
 	MEDIA=""	
@@ -39,7 +38,6 @@ getnetwork(){
 	fi
 }
 
-# more icons       (  :vol mute not showing up)
 getvolume(){
 	# each SINK comes in the format: "AIII"
 	# where A is an asterisk (active sink) or a blank (inactive)
@@ -55,6 +53,12 @@ getvolume(){
                 	echo " $VOL"
         	fi
 	done
+}
+
+getbrightness(){
+	BRIGHT=$(cat /sys/class/backlight/intel_backlight/brightness)
+	PERCENT=$(($BRIGHT*100/24000))
+	echo " $PERCENT%"
 }
 
 getbattery(){
@@ -94,7 +98,7 @@ getdate(){
 while :; do
 
 	# build status bar
-	status=" $(getmedia) | $(getnetwork) | $(getvolume) | $(getbattery) | $(getdate)"
+	status=" $(getmedia) | $(getnetwork) | $(getvolume) | $(getbrightness) | $(getbattery) | $(getdate)"
 
 	# update status bar
 	xsetroot -name "$status"
