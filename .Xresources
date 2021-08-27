@@ -45,8 +45,8 @@ st.color15:      #ffffff
 ! #################### theme 1 #########################
 ! --------st---------
 ! cursor colors when on the foreground or background (matches non-selected tab background color)
-st.foreground:   #50a3fc
-st.background:   #50a3fc
+st.foreground:   #0c2488
+st.background:   #0c2488
 ! mocp non-gray backgrounds
 st.color4:       #bdbcbc
 st.color6:       #bdbcbc
