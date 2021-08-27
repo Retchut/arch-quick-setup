@@ -32,18 +32,11 @@
 
 ################## BACKLIGHT ###################
 
-# xbacklight does not work without the intel drivers
-# and the nvidia drivers break nvidia prime
-#"xbacklight -dec 10"
-#	XF86MonBrightnessDown
-#"xbacklight -inc 10"
-#	XF86MonBrightnessUp
+"xbacklight -dec 10"
+	XF86MonBrightnessDown
 
-#"decrease-brightness.sh"
-#	XF86MonBrightnessDown
-
-#"increase-brightness.sh"
-#	XF86MonBrightnessUp
+"xbacklight -inc 10"
+	XF86MonBrightnessUp
 
 ################################################
 

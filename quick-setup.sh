@@ -7,6 +7,7 @@
 curr_dir=$(pwd)
 
 sudo pacman -Syyu --noconfirm
+sudo pacman -S --noconfirm xf86-video-intel xf86-video-vesa xf86-video-fbdev
 sudo pacman -S --noconfirm xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk
 
 # set keymap and layout
@@ -122,13 +123,6 @@ sudo pacman -S --noconfirm lib32-nvidia-utils # some games on steam are still 32
 sudo pacman -S --noconfirm nvidia-prime # for prime gpu switching
 
 echo ""
-echo "keybindings were setup for my hardware, so I recommend you edit the .xbindkeysrc with the keys you wish to bind to the commands in the file (and change the devices mentioned by some commands), which was copied to your home folder, then run xbindkeys --poll-rc"
-echo "you can use xbindkeys --multikey or xbindkeys --key to get a key's keycode"
-echo "the format of .xbindkeysrc is as follows"
-echo "\"command\""
-echo "\tkeycode"
-
-echo ""
 echo "after rebooting:"
 echo "--> run 'setxkbmap -layout pt' if X is not using the pt keymap"
 echo "--> you need to configure mozc using the fcitx-config tool afterwards"
@@ -137,6 +131,16 @@ echo "export GTK_IM_MODULE='fcitx'"
 echo "export QT_IM_MODULE='fcitx'"
 echo "export SDL_IM_MODULE='fcitx'"
 echo "export XMODIFIERS='@im=fcitx'"
+
+echo ""
+echo "VERY IMPORTANT"
+echo "In order to fix the issue of everything running on the igpu, even on nvidia mode and/or with prime-run"
+echo "run `sudo systemctl edit lightdm`"
+echo "and write in between the comments the following:"
+echo "[Service]"
+echo "ExecStartPre=/bin/sleep 5"
+echo ""
+echo "This delay lets everything work smoothly"
 
 echo ""
 echo "don't forget to add `prime-run %command%` to the launch options of games on steam"
