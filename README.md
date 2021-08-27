@@ -65,6 +65,8 @@ Additionally, you ought to edit two dotfiles:
 	1).xprofile 	--> remove the line that starts fcitx
 	2).bash_profile --> remove the 4 lines setting the input method global variables
 
+If you want japanese input, after running the script and rebooting, you need to configure mozc using the fcitx-configtool
+
 #
 
 The sections that follow enumerate what this script does right now, what it doesn't do yet, but might when I stop being lazy, and the last section contains a full(-ish) list of the programs this script will install.
