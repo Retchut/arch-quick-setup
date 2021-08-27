@@ -106,6 +106,10 @@ sudo pacman -S --noconfirm wavpack
 # OPTIONAL
 # install japanese input utilities
 sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+echo "export GTK_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
+echo "export QT_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
+echo "export SDL_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
+echo "export XMODIFIERS='@im=fcitx'" | sudo tee -a /etc/profile
 
 # install droidcam
 sudo pacman -S --noconfirm wget linux-headers
@@ -126,11 +130,6 @@ echo ""
 echo "after rebooting:"
 echo "--> run 'setxkbmap -layout pt' if X is not using the pt keymap"
 echo "--> you need to configure mozc using the fcitx-config tool afterwards"
-echo "--> to use mozc with the suckless simple terminal, add the following lines to your /etc/profile file:"
-echo "export GTK_IM_MODULE='fcitx'"
-echo "export QT_IM_MODULE='fcitx'"
-echo "export SDL_IM_MODULE='fcitx'"
-echo "export XMODIFIERS='@im=fcitx'"
 
 echo ""
 echo "VERY IMPORTANT"
