@@ -6,23 +6,29 @@
 ################# PULSE AUDIO #################
 
 #increase volume
-#"pactl set-sink-volume @DEFAULT_SINK@ +2000"	# only works on the default sink
+#"pactl set-sink-volume @DEFAULT_SINK@ +2000"	# only works on the default (current) sink
+
 "for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK +5%; done; refreshstatus.sh"
 	XF86AudioRaiseVolume
 
 #decrease volume
-#"pactl set-sink-volume @DEFAULT_SINK@ -2000"	# only works on the default sink
+#"pactl set-sink-volume @DEFAULT_SINK@ -2000"	# only works on the default (current) sink
+
 "for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK -5%; done; refreshstatus.sh"
 	XF86AudioLowerVolume
 
 
 #mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle; refreshstatus.sh"
+"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-mute $SINK toggle; done; refreshstatus.sh"
 	XF86AudioMute
 
 #mute microphone
-"pactl set-source-mute @DEFAULT_SOURCE@ toggle; refreshstatus.sh"
-	Control+Alt + m
+"for SOURCE in `pacmd list-sources | grep 'index:' | cut -b12-`; do pactl set-source-mute $SOURCE toggle; done; refreshstatus.sh"
+	XF86Launch1
+
+################################################
+
+################# PRINTSCREEN ##################
 
 #printscreen
 "scrot ~/screenshots/%Y%m%d-%H-%M-%S-screenshot.png"

@@ -38,21 +38,36 @@ getnetwork(){
 	fi
 }
 
+getmicmute(){
+	# check if the microphone is muted
+	# the default source is the currently active one
+	if [ "$(pactl get-source-mute @DEFAULT_SOURCE@ | cut -b 7-)" == "yes" ]
+	then
+		echo " "
+	fi
+}
+
 getvolume(){
-	# each SINK comes in the format: "AIII"
-	# where A is an asterisk (active sink) or a blank (inactive)
-	# and III is the sink index
-	for SINK in `pacmd list-sinks | grep 'index:' | cut -b 3,12-`;
-	do
-        	# if the first character is an asterisk
-        	if [ "$(echo $SINK | cut -b 1)" == "*" ]
-        	then
-                	# active sink
-        	        INDEX="$(echo $SINK | cut -b 2-)"
-	                VOL="$(echo $(pactl get-sink-volume $INDEX | awk '{ print $5 }' ))"
-                	echo " $VOL"
-        	fi
-	done
+	ICON=""
+	VOL=$(pactl get-sink-volume @DEFAULT_SINK@  | awk '{ print $5 }')
+	
+	# the default sink is the currently active one
+	if [ "$(pactl get-sink-mute @DEFAULT_SINK@ | cut -b 7-)" == "yes" ]
+	then
+		ICON=" "
+	else
+		if [ $VOL == "0%" ]
+		then
+			ICON=" "
+		elif [ $(echo $VOL | cut -d% -f1) -gt 50 ]
+		then
+			ICON=" "
+		else
+			ICON=" "
+		fi
+	fi
+
+	echo "$ICON$VOL"
 }
 
 getbrightness(){
@@ -98,7 +113,7 @@ getdate(){
 while :; do
 
 	# build status bar
-	status=" $(getmedia) | $(getnetwork) | $(getvolume) | $(getbrightness) | $(getbattery) | $(getdate)"
+	status=" $(getmedia) | $(getnetwork) | $(getmicmute)$(getvolume) | $(getbrightness) | $(getbattery) | $(getdate)"
 
 	# update status bar
 	xsetroot -name "$status"
