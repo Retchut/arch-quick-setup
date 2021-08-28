@@ -98,9 +98,7 @@ sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-st
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs
 
 # gaming
-sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
-sudo pacman -S --noconfirm flatpak
-flatpak install flathub org.desmume.DeSmuME # to run DeSmuME: flatpak run org.desmume.DeSmuMe
+sudo pacman -S --noconfirm steam pcsx2 desmume # steam needs the Arial font
 
 # import moc-pulse's gpg key
 # TODO: this is probably a HUGE security risk, I should look into this
