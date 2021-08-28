@@ -7,21 +7,21 @@
 
 #increase volume
 #"pactl set-sink-volume @DEFAULT_SINK@ +2000"	# only works on the default sink
-"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK +5%; done"
+"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK +5%; done; refreshstatus.sh"
 	XF86AudioRaiseVolume
 
 #decrease volume
 #"pactl set-sink-volume @DEFAULT_SINK@ -2000"	# only works on the default sink
-"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK -5%; done"
+"for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do pactl set-sink-volume $SINK -5%; done; refreshstatus.sh"
 	XF86AudioLowerVolume
 
 
 #mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+"pactl set-sink-mute @DEFAULT_SINK@ toggle; refreshstatus.sh"
 	XF86AudioMute
 
 #mute microphone
-"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle; refreshstatus.sh"
 	Control+Alt + m
 
 #printscreen
@@ -32,10 +32,10 @@
 
 ################## BACKLIGHT ###################
 
-"xbacklight -dec 10"
+"xbacklight -dec 10; refreshstatus.sh"
 	XF86MonBrightnessDown
 
-"xbacklight -inc 10"
+"xbacklight -inc 10; refreshstatus.sh"
 	XF86MonBrightnessUp
 
 ################################################
