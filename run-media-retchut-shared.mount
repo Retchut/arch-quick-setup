@@ -2,7 +2,7 @@
 Description=Mount Shared Partition
 
 [Mount]
-What=/dev/nvme0n1p6
+What=/dev/sda2
 Where=/run/media/retchut/shared
 Type=ntfs
 Options=defaults
