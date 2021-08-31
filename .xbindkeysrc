@@ -56,7 +56,7 @@
 ################### ASUSCTL ####################
 
 #change fan mode
-"asusctl profile -n"
+"asusctl profile -n; refreshstatus.sh"
 	XF86Launch4
 
 #rgb brightness up

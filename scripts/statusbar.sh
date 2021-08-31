@@ -22,6 +22,12 @@ getmedia(){
 	echo $MEDIA
 }
 
+getfanprofile(){
+	STATUS=$(asusctl profile -a | cut -b 18-)
+	STATUS=${STATUS%?}
+	echo " $STATUS"
+}
+
 getnetwork(){
     WIFI_STRENGTH=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
 
@@ -113,7 +119,7 @@ getdate(){
 while :; do
 
 	# build status bar
-	status=" $(getmedia) | $(getnetwork) | $(getmicmute)$(getvolume) | $(getbrightness) | $(getbattery) | $(getdate)"
+	status=" $(getmedia) | $(getfanprofile) | $(getnetwork) | $(getmicmute)$(getvolume) | $(getbrightness) | $(getbattery) | $(getdate)"
 
 	# update status bar
 	xsetroot -name "$status"
@@ -122,5 +128,3 @@ while :; do
 	# the forcestatusupdate.sh script kills this script and reruns it
 	sleep 30s
 done
-
-# | media | volume | battery | internet | date
