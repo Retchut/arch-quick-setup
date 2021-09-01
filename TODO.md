@@ -1,5 +1,4 @@
 # status bar script:
---> replace wifi % with network name
 --> update media status when pressing media keybindings
 --> fan status monitor
 

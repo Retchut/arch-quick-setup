@@ -29,7 +29,9 @@ getfanprofile(){
 }
 
 getnetwork(){
-    WIFI_STRENGTH=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
+	WIFI_STRENGTH=$(grep "^\s*w" /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
+	NETWORK=$(nmcli connection show)
+	NETWORK=$(echo $NETWORK | awk '{ print $5 }')
 
 	# if we're connected via an ethernet cable
 	# alternative icon for ethernet if I'm feeling particularly cute that day:
@@ -40,7 +42,7 @@ getnetwork(){
 	then
         	echo ""
 	else
-        	echo " $WIFI_STRENGTH%"
+        	echo " $NETWORK"
 	fi
 }
 
