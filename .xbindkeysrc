@@ -53,6 +53,20 @@
 
 ################################################
 
+################ MEDIA CONTROLS ################
+
+"mocp -G; refreshstatus.sh"
+	XF86AudioPlay
+
+"mocp -r; sleep 0.1; refreshstatus.sh"
+	XF86AudioPrev
+
+
+"mocp -f; sleep 0.1; refreshstatus.sh"
+	XF86AudioNext
+
+################################################
+
 ################### ASUSCTL ####################
 
 #change fan mode

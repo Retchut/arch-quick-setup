@@ -1,7 +1,3 @@
-# status bar script:
---> update media status when pressing media keybindings
---> fan status monitor
-
 # monitor scripts
 --> extend right/left monitor scripts
 
