@@ -31,7 +31,7 @@
 ################# PRINTSCREEN ##################
 
 #printscreen
-"scrot ~/screenshots/%Y%m%d-%H-%M-%S-screenshot.png"
+"scrot ~/shared/screenshots/%Y%m%d-%H-%M-%S-screenshot.png"
 	Print
 
 ################################################
