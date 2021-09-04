@@ -31,7 +31,7 @@ st.color11:      #ffffff
 ! color 1 or 8  --> nano selection background
 
 st.color0:       #c20b0b
-st.color1:       #000000
+st.color1:       #e30022
 st.color2:       #ff00a1
 st.color8:	 #000000
 st.color10:      #ff00a1
