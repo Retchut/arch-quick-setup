@@ -17,7 +17,7 @@ sudo localectl --no-ask-password set-keymap pt-latin1
 mkdir ~/packages
 mkdir ~/.config
 cp -rf dmenu dwm st ~/packages
-cp -rf wallpapers ~
+cp -rf .moc wallpapers ~
 cp -f .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources ~
 mkdir ~/.local/bin
 
