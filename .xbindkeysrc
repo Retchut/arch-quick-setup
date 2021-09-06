@@ -58,6 +58,9 @@
 "mocp -G; refreshstatus.sh"
 	XF86AudioPlay
 
+"mocp -s; refreshstatus.sh"
+	Control + XF86AudioPlay
+
 "mocp -r; sleep 0.1; refreshstatus.sh"
 	XF86AudioPrev
 
