@@ -93,9 +93,10 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm man-db man-pages unzip unrar bc neofetch mpv mesa-demos # utilities
+sudo pacman -S --noconfirm man-db man-pages unzip bc neofetch mpv mesa-demos # utilities
 sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs rar unityhub
+sudo pacman -S --noconfirm dotnet-runtime dotnet-sdk mono-msbuild mono # for using vscode with unity
 
 # gaming
 sudo pacman -S --noconfirm steam pcsx2 desmume # steam needs the Arial font
@@ -133,6 +134,7 @@ echo ""
 echo "after rebooting:"
 echo "--> run 'setxkbmap -layout pt' if X is not using the pt keymap"
 echo "--> you need to configure mozc using the fcitx-config tool afterwards"
+echo "--> add yourself to the video, audio and input user groups"
 
 echo ""
 echo "don't forget to add `prime-run %command%` to the launch options of games on steam"
