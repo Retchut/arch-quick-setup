@@ -4,19 +4,27 @@ getmedia(){
 	STATE="$(mocp -i | grep "State: " | cut -b 8-)"
 	MEDIA=""	
 
-	if [ $STATE == "STOP"  ]
+	if [[ $STATE == "STOP"  ]]
         then
                 MEDIA=""
         else
-		if [ $STATE == "PAUSE" ]
+		if [[ $STATE == "PAUSE" ]]
 		then
 			MEDIA=""
-		elif [ $STATE == "PLAY" ]
+		elif [[ $STATE == "PLAY" ]]
 		then
 			MEDIA=""
 		fi
+		
+		SONG="$(mocp -i | grep "SongTitle: " | cut -b 11-)"
 
-		MEDIA="$MEDIA$(mocp -i | grep "SongTitle: " | cut -b 11-)"
+		# show the file name if the song has no title
+		if [[ "$SONG" == "" || "$SONG" == " " ]]
+		then
+			SONG="$(mocp -i | grep "File: " | cut -b 34-)"
+		fi
+
+		MEDIA="$MEDIA $SONG"
 	fi
 
 	echo $MEDIA
