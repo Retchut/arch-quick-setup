@@ -32,9 +32,9 @@ st.color11:      #ffffff
 
 st.color0:       #c20b0b
 st.color1:       #e30022
-st.color2:       #ff00a1
-st.color8:	 #000000
-st.color10:      #ff00a1
+st.color2:       #027240
+st.color8:	     #000000
+st.color10:      #027240
 st.color12:      #2032de
 st.color13:      #0dc7c3
 st.color14:      #c20b0b
