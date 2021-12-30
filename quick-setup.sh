@@ -57,6 +57,10 @@ sudo pacman -S --noconfirm udisks2 ntfs-3g
 # install backlight utility
 sudo pacman -S --noconfirm xorg-xbacklight
 
+# install blue light filter
+sudo pacman -S --noconfirm redshift
+redshift -l 41:8
+
 # install audio and bluetooth utilities
 sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa pavucontrol
 sudo pacman -S --noconfirm bluez bluez-utils pulseaudio-bluetooth
@@ -95,7 +99,7 @@ cd $curr_dir
 # other apps
 sudo pacman -S --noconfirm man-db man-pages unzip calc neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities
 sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs rar unityhub
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs rar obs-studio-git unityhub
 sudo pacman -S --noconfirm dotnet-runtime dotnet-sdk mono-msbuild mono # for using vscode with unity
 
 # gaming
