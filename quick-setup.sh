@@ -63,7 +63,7 @@ redshift -l 41:8
 
 # install audio and bluetooth utilities
 sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa pavucontrol
-sudo pacman -S --noconfirm bluez bluez-utils pulseaudio-bluetooth
+sudo pacman -S --noconfirm bluez bluez-plugins bluez-utils pulseaudio-bluetooth
 sudo systemctl --no-ask-password start bluetooth.service
 sudo systemctl --no-ask-password enable bluetooth.service
 
