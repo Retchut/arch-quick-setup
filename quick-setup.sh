@@ -19,6 +19,7 @@ mkdir ~/.config
 cp -rf dmenu dwm st ~/packages
 cp -rf .moc wallpapers ~
 cp -f .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources ~
+cp -f redshift.conf ~/.config
 mkdir ~/.local/bin
 
 #move scripts
@@ -59,7 +60,6 @@ sudo pacman -S --noconfirm xorg-xbacklight
 
 # install blue light filter
 sudo pacman -S --noconfirm redshift
-redshift -l 41:8
 
 # install audio and bluetooth utilities
 sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa pavucontrol

@@ -5,6 +5,7 @@ xbindkeys           	#keybindings
 picom &             	#window compositor
 mocp -S                 #run mocp server
 statusbar.sh &      	#run status bar script
+redshift &		#blue light filter
 ~/.fehbg &          	#background
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources #load Xresources
 fcitx -d &          	#japanese input
