@@ -1,5 +1,8 @@
 #!/bin/bash
-#export PATH="$PATH:/opt/idea-IC-212.4746.92/bin"
+export PATH="$PATH:/opt/idea-IU-213.6777.52/bin"
+# haskell
+export PATH="/usr/local/sicstus4.7.0/bin/:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
 asusctl -c 60           #set max charge to 60%
 xbindkeys           	#keybindings
 picom &             	#window compositor
