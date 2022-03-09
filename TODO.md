@@ -5,4 +5,4 @@
 --> finish setting up keybindings
 --> figure out a way to run the status bar script on startup, on a location not in the PATH variable
 --> theme lightdm
---> add night light
+--> organize dotfiles and config files
