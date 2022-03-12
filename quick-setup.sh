@@ -7,7 +7,10 @@
 curr_dir=$(pwd)
 
 sudo pacman -Syyu --noconfirm
+# install iGPU drivers
 sudo pacman -S --noconfirm xf86-video-intel xf86-video-vesa xf86-video-fbdev
+# install proprietary dGPU nvidia drivers
+sudo pacman -S --noconfirm nvidia
 sudo pacman -S --noconfirm xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk
 
 # set keymap and layout
