@@ -88,7 +88,8 @@ getvolume(){
 
 getbrightness(){
 	BRIGHT=$(cat /sys/class/backlight/intel_backlight/brightness)
-	PERCENT=$(($BRIGHT*100/24000))
+	MAX_BRIGHT=$(cat /sys/class/backlight/intel_backlight/max_brightness)
+	PERCENT=$(($BRIGHT*100/$MAX_BRIGHT))
 	echo " $PERCENT%"
 }
 
