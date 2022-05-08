@@ -100,9 +100,9 @@ makepkg --noconfirm -si
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm man-db man-pages unzip calc neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities
+sudo pacman -S --noconfirm man-db man-pages unzip calc neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities android-file-transfer
 sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle simple-mtpfs rar obs-studio-git unityhub
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle rar obs-studio-git unityhub
 sudo pacman -S --noconfirm dotnet-runtime dotnet-sdk mono-msbuild mono # for using vscode with unity
 
 # gaming
