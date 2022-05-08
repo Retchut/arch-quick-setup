@@ -17,6 +17,7 @@ getmedia(){
 		fi
 		
 		SONG="$(mocp -i | grep "SongTitle: " | cut -b 11-)"
+		ARTIST="$(mocp -i | grep "Artist: " | cut -b 9-)"
 
 		# show the file name if the song has no title
 		if [[ "$SONG" == "" || "$SONG" == " " ]]
@@ -24,15 +25,15 @@ getmedia(){
 			SONG="$(mocp -i | grep "File: " | cut -b 34-)"
 		fi
 
-		MEDIA="$MEDIA $SONG"
+		MEDIA="$MEDIA $SONG ($ARTIST)"
 	fi
 
 	echo $MEDIA
 }
 
 getfanprofile(){
-	STATUS=$(asusctl profile -a | cut -b 18-)
-	STATUS=${STATUS%?}
+	STATUS=$(asusctl profile -p | cut -b 19-)
+	STATUS=${STATUS?}
 	echo " $STATUS"
 }
 
