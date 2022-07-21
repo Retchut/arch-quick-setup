@@ -102,14 +102,13 @@ cd $curr_dir
 # other apps
 sudo pacman -S --noconfirm man-db man-pages unzip calc baobab neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities android-file-transfer
 sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle rar obs-studio-git unityhub
-sudo pacman -S --noconfirm dotnet-runtime dotnet-sdk mono-msbuild mono # for using vscode with unity
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle rar
 
 # gaming
-sudo pacman -S --noconfirm steam pcsx2 desmume # steam needs the Arial font
+sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
 
 # import moc-pulse's gpg key
-# TODO: this is probably a HUGE security risk, I should look into this
+# TODO: this is probably a security risk, I should look into this
 gpg --recv-keys F3121E4F2885A7AA
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm  moc-pulse
 sudo pacman -S --noconfirm wavpack
