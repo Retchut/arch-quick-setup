@@ -40,7 +40,7 @@ sudo make clean
 cd ~/packages/dmenu
 sudo make clean install
 sudo make clean
-sudo pacman -S --noconfirm xorg-xsetroot awesome-terminal-fonts
+sudo pacman -S --noconfirm xorg-xsetroot
 cd ~/packages/dwm
 sudo make clean install
 sudo make clean
@@ -101,8 +101,8 @@ cd $curr_dir
 
 # other apps
 sudo pacman -S --noconfirm man-db man-pages unzip calc baobab neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities android-file-transfer
-sudo pacman -S --noconfirm firefox nautilus vlc anki discord gimp libreoffice-still audacity shotcut
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin ttf-ms-fonts xinput-toggle rar
+sudo pacman -S --noconfirm firefox nautilus vlc discord gimp libreoffice-still audacity shotcut
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm anki visual-studio-code-bin ttf-ms-fonts xinput-toggle rar ttf-font-awesome-5
 
 # gaming
 sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
@@ -131,7 +131,6 @@ sudo pacman -S --noconfirm libappindicator-gtk3
 # asus laptop (asusctl)
 # read more at https://asus-linux.org/wiki/arch-guide/
 sudo pacman -S --noconfirm asusctl
-sudo pacman -S --noconfirm nvidia-dkms # install nvidia drivers
 sudo pacman -S --noconfirm lib32-nvidia-utils # some games on steam are still 32 bit
 sudo pacman -S --noconfirm nvidia-prime # for prime gpu switching
 
@@ -142,4 +141,4 @@ echo "--> you need to configure mozc using the fcitx-config tool afterwards"
 echo "--> add yourself to the video, audio and input user groups"
 
 echo ""
-echo "don't forget to add `prime-run %command%` to the launch options of games on steam"
+echo "don't forget to add \"prime-run %command%\" to the launch options of games on steam"
