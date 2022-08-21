@@ -77,13 +77,11 @@
 	XF86Launch4
 
 #rgb brightness up
-#"asusctl -k high"
-"asusctl led-pow-1 -a true -k true -l true -b true -s true"
+"asusctl -k high"
 	XF86KbdBrightnessUp
 
 #rgb brightness down
-#"asusctl -k off"
-"asusctl led-pow-1 -a false -k false -l false -b false -s false"
+"asusctl -k off"
 	XF86KbdBrightnessDown
 
 #next aura profile
