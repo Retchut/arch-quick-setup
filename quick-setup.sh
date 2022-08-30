@@ -24,6 +24,7 @@ cp -rvf dmenu/ dwm/ st/ ~/packages
 cp -rvf .moc/ wallpapers/ ~
 cp -vf .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources ~
 cp -vf redshift.conf ~/.config
+sudo cp -vf logind.conf /etc/systemd/logind.conf
 mkdir ~/.local/
 mkdir ~/.local/bin
 
