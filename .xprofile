@@ -9,5 +9,4 @@ redshift &		#blue light filter
 ~/.fehbg &          	#background
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources #load Xresources
 fcitx -d &          	#japanese input
-alias cclip='xclip -selection clipboard'
 exec dwm            	#start window manager
