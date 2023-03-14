@@ -101,8 +101,10 @@ makepkg --noconfirm -si;
 cd $curr_dir
 
 # other apps
-sudo pacman -S --noconfirm man-db man-pages xclip zip unzip bc calc baobab neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp # utilities android-file-transfer
-sudo pacman -S --noconfirm firefox nautilus vlc discord gimp libreoffice-still audacity shotcut
+sudo pacman -S --noconfirm man-db man-pages xclip zip unzip bc calc baobab neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp android-file-transfer # utilities 
+sudo pacman -S --noconfirm firefox nautilus vlc discord gimp libreoffice-still shotcut vlc
+sudo pacman -S --noconfirm docker docker-compose nodejs npm python-pip # development
+sudo pacman -S --noconfirm reaper audacity # classes
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm anki visual-studio-code-bin ttf-ms-fonts xinput-toggle rar ttf-font-awesome-5
 
 # gaming
