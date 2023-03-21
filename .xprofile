@@ -1,5 +1,6 @@
 #!/bin/bash
 
+xinput --set-prop 'pointer:Logitech MX Vertical' 'libinput Accel Speed' -1 # set my mouse sensitivity to a lower value
 asusctl -c 60           #set max charge to 60%
 xbindkeys           	#keybindings
 picom &             	#window compositor
