@@ -74,7 +74,7 @@ sudo pacman -S --noconfirm pulseaudio pulseaudio-alsa pavucontrol
 sudo pacman -S --noconfirm bluez bluez-plugins bluez-utils pulseaudio-bluetooth
 sudo systemctl --no-ask-password enable bluetooth.service
 # trackpad and mouse config
-sudo cp -vf 30-touchpad.conf /etc/X11/xorg.conf.d/
+sudo cp -vf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 # screenshots
 sudo pacman -S --noconfirm scrot
 mkdir ~/screenshots
