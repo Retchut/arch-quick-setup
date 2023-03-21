@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #echo "read the readme or something might go wrong and that's very very no good bad bad :(((("
 #echo "have you read the readme?"
@@ -108,7 +109,7 @@ sudo pacman -S --noconfirm reaper audacity # classes
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm anki visual-studio-code-bin ttf-ms-fonts xinput-toggle rar ttf-font-awesome-5
 
 # gaming
-sudo pacman -S --noconfirm steam pcsx2 # steam needs the Arial font
+sudo pacman -S --noconfirm steam pcsx2 lutris # steam needs the Arial font
 
 # import moc-pulse's gpg key
 # gpg --recv-keys F3121E4F2885A7AA
