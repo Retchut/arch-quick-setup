@@ -138,6 +138,8 @@ sudo pacman -S --noconfirm libappindicator-gtk3
 sudo pacman -S --noconfirm asusctl
 sudo pacman -S --noconfirm lib32-nvidia-utils # some games on steam are still 32 bit
 sudo pacman -S --noconfirm nvidia-prime # for prime gpu switching
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm optimus-manager # for prime gpu switching
+sudo cp optimus-manager.conf /etc/optimus-manager/optimus-manager.conf
 
 echo ""
 echo "after rebooting:"
