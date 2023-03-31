@@ -66,7 +66,7 @@ echo "-----------------------------------------------------------UTILITIES------
 # partition mounting utility
 sudo pacman -S --noconfirm udisks2 ntfs-3g
 # backlight control
-sudo pacman -S --noconfirm xorg-xbacklight
+sudo pacman -S --noconfirm brightnessctl
 # blue light filter
 sudo pacman -S --noconfirm redshift
 # install audio and bluetooth

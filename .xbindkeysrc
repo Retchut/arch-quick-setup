@@ -38,10 +38,10 @@
 
 ################## BACKLIGHT ###################
 
-"xbacklight -dec 10; refreshstatus.sh"
+"brightnessctl set 8%-; refreshstatus.sh"
 	XF86MonBrightnessDown
 
-"xbacklight -inc 10; refreshstatus.sh"
+"brightnessctl set 8%+; refreshstatus.sh"
 	XF86MonBrightnessUp
 
 ################################################
