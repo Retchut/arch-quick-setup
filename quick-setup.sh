@@ -23,7 +23,7 @@ mkdir ~/packages
 mkdir ~/.config
 cp -rvf dmenu/ dwm/ st/ ~/packages
 cp -rvf .moc/ wallpapers/ ~
-cp -vf .bashrc .bash_aliases .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources ~
+cp -vf .bashrc .bash_aliases .bash_profile .fehbg .xbindkeysrc .xprofile .Xresources* ~
 cp -vf redshift.conf mimeapps.list ~/.config
 sudo cp -vf logind.conf /etc/systemd/logind.conf
 mkdir ~/.local/
