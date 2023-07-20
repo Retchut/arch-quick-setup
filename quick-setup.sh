@@ -129,6 +129,7 @@ yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cl
 echo "\n\n-----------------------------------------------------------Gaming------------------------------------"
 sudo pacman -S --noconfirm steam lutris # steam needs the Arial font
 yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm pcsx2 bottles
+sudo pacman -S --noconfirm lib32-libpulse lib32-openal # packages necessary for pulseaudio to work with wine apps
 
 # import moc-pulse's gpg key
 echo "\n\n-----------------------------------------------------------mocp------------------------------------"
