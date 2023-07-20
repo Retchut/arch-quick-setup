@@ -147,15 +147,6 @@ echo "export QT_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
 echo "export SDL_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
 echo "export XMODIFIERS='@im=fcitx'" | sudo tee -a /etc/profile
 
-# install droidcam
-echo "\n\n-----------------------------------------------------------Droidcam------------------------------------"
-sudo pacman -S --noconfirm wget linux-headers
-cd /tmp/
-wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.7.3.zip
-unzip droidcam_latest.zip -d droidcam
-cd droidcam && sudo ./install-client && sudo ./install-video
-sudo pacman -S --noconfirm libappindicator-gtk3
-
 # asus laptop (asusctl)
 # read more at https://asus-linux.org/wiki/arch-guide/
 echo "\n\n-----------------------------------------------------------Asusctl------------------------------------"
