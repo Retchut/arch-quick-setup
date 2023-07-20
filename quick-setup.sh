@@ -115,32 +115,32 @@ cd $curr_dir
 # other apps
 echo "\n\n-----------------------------------------------------------System Utils------------------------------------"
 sudo pacman -S --noconfirm man-db man-pages xclip zip unzip bc calc baobab neofetch mpv mesa-demos nm-connection-editor networkmanager-pptp android-file-transfer # utilities 
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm xinput-toggle rar
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm xinput-toggle rar
 echo "\n\n-----------------------------------------------------------Fonts------------------------------------"
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm ttf-ms-fonts ttf-font-awesome-5
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm ttf-ms-fonts ttf-font-awesome-5
 echo "\n\n-----------------------------------------------------------Multimedia Utils------------------------------------"
 sudo pacman -S --noconfirm firefox nautilus vlc discord gimp libreoffice-still vlc
 echo "\n\n-----------------------------------------------------------Development Utils------------------------------------"
 sudo pacman -S --noconfirm docker docker-compose nodejs npm python-pip # development
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm visual-studio-code-bin
 
 
 # gaming
 echo "\n\n-----------------------------------------------------------Gaming------------------------------------"
 sudo pacman -S --noconfirm steam lutris # steam needs the Arial font
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm pcsx2 bottles
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm pcsx2 bottles
 sudo pacman -S --noconfirm lib32-libpulse lib32-openal # packages necessary for pulseaudio to work with wine apps
 
 # import moc-pulse's gpg key
 echo "\n\n-----------------------------------------------------------mocp------------------------------------"
 # gpg --recv-keys F3121E4F2885A7AA
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm  moc-pulse
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm  moc-pulse
 sudo pacman -S --noconfirm wavpack
 
 # OPTIONAL
 # install japanese input utilities
 echo "\n\n-----------------------------------------------------------Japanese Study------------------------------------"
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm anki visual-studio-code-bin
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm anki visual-studio-code-bin
 sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
 echo "export GTK_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
 echo "export QT_IM_MODULE='fcitx'" | sudo tee -a /etc/profile
@@ -164,7 +164,7 @@ sudo pacman -S --noconfirm lib32-nvidia-utils # some games on steam are still 32
 
 echo "\n\n-----------------------------------------------------------Prime GPU switching------------------------------------"
 sudo pacman -S --noconfirm nvidia-prime # for prime gpu switching
-yay -S --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm optimus-manager # for prime gpu switching
+yay -S --nocleanmenu --nodiffmenu --noeditmenu --removemake --cleanafter --nopgpfetch --noprovides --sudoloop --noconfirm optimus-manager # for prime gpu switching
 sudo cp optimus-manager.conf /etc/optimus-manager/optimus-manager.conf
 
 echo "\n\n"
