@@ -17,7 +17,7 @@ st.color11:      #ffffff
 
 ! color 0  --> tmp dir text                                     |   mocp selected text/selected data background
 ! color 1  --> nano messages background, git modified file
-! color 2  --> external partition directory background
+! color 2  --> external partition directory background, console.log color
 ! color 4  --> external partition directory text                |   mocp playing data background
 ! color 6  --> system stuff?                                    |   mocp selected background
 ! color 8  -->							|   mocp player options background
@@ -32,7 +32,6 @@ st.color11:      #ffffff
 
 st.color0:       #c20b0b
 st.color1:       #e30022
-st.color2:       #027240
 st.color8:	     #FFFFFF
 st.color10:      #027240
 st.color12:      #2032de
@@ -51,6 +50,7 @@ st.background:   #0c2488
 st.color4:       #bdbcbc
 st.color6:       #bdbcbc
 ! text and standard files
+st.color2:       #027240
 st.color7:       #50a3fc
 
 
@@ -98,6 +98,7 @@ dmenu.foreground: #50a3fc
 !st.color4:       #bdbcbc
 !st.color6:       #bdbcbc
 !! text and standard files
+!st.color2:       #027240
 !st.color7:       #00ffb9
 !
 !
@@ -149,7 +150,8 @@ dmenu.foreground: #50a3fc
 !st.color4:       #00ffb9
 !st.color6:       #00ffb9
 !! text and standard files
-!st.color7:       #f90303
+!st.color2:       #027240
+!st.color7:       #bdbcbc
 !
 !
 !! --------dwm---------
