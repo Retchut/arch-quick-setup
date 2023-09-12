@@ -1,6 +1,7 @@
 #!/bin/bash
 
-xinput --set-prop 'pointer:Logitech MX Vertical' 'libinput Accel Speed' -1 # set my mouse sensitivity to a lower value
+xinput --set-prop 'pointer:Logitech MX Vertical Advanced Ergonomic Mouse' 'libinput Accel Speed' -0.9
+xinput --set-prop 'pointer:Logitech MX Vertical' 'libinput Accel Speed' -0.9 # set my mouse sensitivity to a lower value
 asusctl -c 60           #set max charge to 60%
 xbindkeys           	#keybindings
 picom &             	#window compositor
@@ -10,4 +11,5 @@ redshift &		#blue light filter
 ~/.fehbg &          	#background
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources #load Xresources
 fcitx -d &          	#japanese input
+xrandr -r 60		#note to self: mostly for battery life preservation - if I need a higher refresh rate, I can always set it myself
 exec dwm            	#start window manager

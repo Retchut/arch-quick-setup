@@ -165,4 +165,4 @@ echo "--> you need to configure mozc using the fcitx-config tool afterwards"
 echo "--> add yourself to the video, audio and input user groups"
 
 echo ""
-echo "don't forget to add \"prime-run %command%\" to the launch options of games on steam"
+echo "don't forget to add \"prime-run %command%\" to the launch options of games on steam (when on hybrid mode - remove it if on nvidia mode)"
