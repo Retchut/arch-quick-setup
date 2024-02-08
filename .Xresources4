@@ -1,0 +1,246 @@
+! transparency value (0-1)
+st.alpha: 0.7
+
+! Set a default font and font size as below:
+*.font: Liberation Mono Bold:pixelsize=16:antialias=true:autohint=true
+st.font: Liberation Mono:pixelsize=20:antialias=true:autohint=true
+
+! ############# constant terminal colors #################
+
+! no idea what these are. keeping them as white so I know when I come across them
+st.color3:       #ffffff
+st.color5:       #ffffff
+st.color9:       #ffffff
+st.color11:      #ffffff
+! some of these are error messages on nano and compile text when running make
+! some of these are mocp tag thingies and selected nano text
+
+! color 0  --> tmp dir text                                     |   mocp selected text/selected data background
+! color 1  --> nano messages background, git modified file
+! color 2  --> external partition directory background, console.log color
+! color 4  --> external partition directory text                |   mocp playing data background
+! color 6  --> system stuff?                                    |   mocp selected background
+! color 8  -->							|   mocp player options background
+! color 10 --> external partition files, some dotfiles
+! color 12 --> internal partition directory text, some dotfiles |   mocp data text
+! color 13 --> sockets/pipes?
+! color 14 --> some dotfiles
+! color 15 --> nano messages                                    |   mocp now playing name
+
+! color 2 or 10 --> cfdisks free
+! color 1 or 8  --> nano selection background
+
+st.color0:       #c20b0b
+st.color1:       #e30022
+st.color8:	     #FFFFFF
+st.color10:      #027240
+st.color12:      #2032de
+st.color13:      #0dc7c3
+st.color14:      #c20b0b
+st.color15:      #ffffff
+
+! ######################################################
+
+!! #################### theme 1 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #0c2488
+!st.background:   #0c2488
+!! mocp non-gray backgrounds
+!st.color4:       #bdbcbc
+!st.color6:       #bdbcbc
+!! text and standard files
+!st.color2:       #027240
+!st.color7:       #50a3fc
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour 
+!dwm.selbgcolor: #50a3fc
+!! non-selected tab     -> matches selected tab font colour
+!dwm.normbgcolor: #000000
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+!dwm.selfgcolor: #000000
+!! non-selected tab     -> matches selected tab background colour 
+!dwm.normfgcolor: #50a3fc
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #50a3fc
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #000000
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #000000
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #50a3fc
+!
+!! ######################################################
+
+!! #################### theme 2 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #6d0062
+!st.background:   #6d0062
+!! mocp gray backgrounds
+!st.color4:       #bdbcbc
+!st.color6:       #bdbcbc
+!! text and standard files
+!st.color2:       #027240
+!st.color7:       #00ffb9
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour
+! dwm.selbgcolor: #00ffb9
+!! non-selected tab     -> matches selected tab font colour
+! dwm.normbgcolor: #6d0062
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+! dwm.selfgcolor: #6d0062
+!! non-selected tab     -> matches selected tab background colour
+! dwm.normfgcolor: #00ffb9
+!
+!! test inactive colours
+!!    1      2     3      4      5
+!! 6d0062 6d002b 41006d 5f006d 6d0045
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #00ffb9
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #6d0062
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #6d0062
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #00ffb9
+!
+!! ######################################################
+
+!! #################### theme 3 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #bdbcbc
+!st.background:   #bdbcbc
+!! mocp non-gray backgrounds
+!st.color4:       #00ffb9
+!st.color6:       #00ffb9
+!! text and standard files
+!st.color2:       #027240
+!st.color7:       #bdbcbc
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour 
+!dwm.selbgcolor: #f90303
+!! non-selected tab     -> matches selected tab font colour
+!dwm.normbgcolor: #bdbcbc
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+!dwm.selfgcolor: #bdbcbc
+!! non-selected tab     -> matches selected tab background colour 
+!dwm.normfgcolor: #f90303
+!
+!! test inactive colours
+!!    1      2
+!! 720000 f90303
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #f90303
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #bdbcbc
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #bdbcbc
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #f90303
+!
+!! ######################################################
+
+! #################### theme 4 #########################
+! --------st---------
+! cursor colors when on the foreground or background (matches non-selected tab background color)
+st.foreground:   #6d0062
+st.background:   #6d0062
+! mocp gray backgrounds
+st.color4:       #bdbcbc
+st.color6:       #bdbcbc
+! text and standard files
+st.color2:       #027240
+st.color7:       #3bf5e7
+
+
+! --------dwm---------
+! border color
+! selected window
+dwm.selbordercolor: #005577
+! non-selected window
+dwm.normbordercolor: #444444
+
+! background and bar colour
+! selected tab         -> matches non-selected tab font colour
+ dwm.selbgcolor: #3bf5e7
+! non-selected tab     -> matches selected tab font colour
+ dwm.normbgcolor: #6d0062
+
+! font color
+! selected tab         -> matches non-selected tab background colour
+ dwm.selfgcolor: #6d0062
+! non-selected tab     -> matches selected tab background colour
+ dwm.normfgcolor: #3bf5e7
+
+! test inactive colours
+!    1      2     3      4      5
+! 6d0062 6d002b 41006d 5f006d 6d0045
+
+
+! -------dmenu--------
+! background
+! selected              -> matches dwm selected background
+dmenu.selbackground: #3bf5e7
+! non-selected          -> matches dwm non-selected background
+dmenu.background: #6d0062
+
+! text
+! selected              -> matches dwm selected text
+dmenu.selforeground: #6d0062
+! non-selected          -> matches dwm non-selected text
+dmenu.foreground: #3bf5e7
+
+! ######################################################

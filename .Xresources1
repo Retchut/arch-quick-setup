@@ -192,3 +192,107 @@ dmenu.foreground: #50a3fc
 !dmenu.foreground: #f90303
 !
 !! ######################################################
+
+!! #################### theme 4 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #6d0062
+!st.background:   #6d0062
+!! mocp gray backgrounds
+!st.color4:       #bdbcbc
+!st.color6:       #bdbcbc
+!! text and standard files
+!st.color2:       #027240
+!st.color7:       #3bf5e7
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour
+! dwm.selbgcolor: #3bf5e7
+!! non-selected tab     -> matches selected tab font colour
+! dwm.normbgcolor: #6d0062
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+! dwm.selfgcolor: #6d0062
+!! non-selected tab     -> matches selected tab background colour
+! dwm.normfgcolor: #3bf5e7
+!
+!! test inactive colours
+!!    1      2     3      4      5
+!! 6d0062 6d002b 41006d 5f006d 6d0045
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #3bf5e7
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #6d0062
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #6d0062
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #3bf5e7
+!
+!! ######################################################
+
+!! #################### theme 4 #########################
+!! --------st---------
+!! cursor colors when on the foreground or background (matches non-selected tab background color)
+!st.foreground:   #6d0062
+!st.background:   #6d0062
+!! mocp gray backgrounds
+!st.color4:       #bdbcbc
+!st.color6:       #bdbcbc
+!! text and standard files
+!st.color2:       #027240
+!st.color7:       #3bf5e7
+!
+!
+!! --------dwm---------
+!! border color
+!! selected window
+!dwm.selbordercolor: #005577
+!! non-selected window
+!dwm.normbordercolor: #444444
+!
+!! background and bar colour
+!! selected tab         -> matches non-selected tab font colour
+! dwm.selbgcolor: #3bf5e7
+!! non-selected tab     -> matches selected tab font colour
+! dwm.normbgcolor: #6d0062
+!
+!! font color
+!! selected tab         -> matches non-selected tab background colour
+! dwm.selfgcolor: #6d0062
+!! non-selected tab     -> matches selected tab background colour
+! dwm.normfgcolor: #3bf5e7
+!
+!! test inactive colours
+!!    1      2     3      4      5
+!! 6d0062 6d002b 41006d 5f006d 6d0045
+!
+!
+!! -------dmenu--------
+!! background
+!! selected              -> matches dwm selected background
+!dmenu.selbackground: #3bf5e7
+!! non-selected          -> matches dwm non-selected background
+!dmenu.background: #6d0062
+!
+!! text
+!! selected              -> matches dwm selected text
+!dmenu.selforeground: #6d0062
+!! non-selected          -> matches dwm non-selected text
+!dmenu.foreground: #3bf5e7
+!
+!! ######################################################
